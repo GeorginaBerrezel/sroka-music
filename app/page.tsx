@@ -3,6 +3,8 @@ import About from '../components/About';
 import EventList from '../components/EventList';
 import VideoGrid from '../components/VideoGrid';
 import NewsFeed from '../components/NewsFeed';
+import Discography from '../components/Discography';
+
 
 export default function Page() {
   return (
@@ -23,6 +25,12 @@ export default function Page() {
       <section id="concerts" className="container section">
         <h2 className="h2">Concerts</h2>
         <EventList />
+      </section>
+
+       {/* 👇 Nouvelle section */}
+      <section id="musique" className="container section">
+        <h2 className="h2">Musique</h2>
+        <Discography />
       </section>
 
       <section id="news" className="container section">

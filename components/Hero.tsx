@@ -28,6 +28,13 @@ export default function Hero() {
           <span className="badge">Ciné/Atmos</span>
           <span className="badge">Live Duo/4Tet</span>
         </div>
+        {/* Réseaux */}
+        <div className="flex">
+          {artist.socials?.instagram && <a className="button" href={artist.socials.instagram} target="_blank" rel="noreferrer">Instagram</a>}
+          {artist.socials?.youtube && <a className="button" href={artist.socials.youtube} target="_blank" rel="noreferrer">YouTube</a>}
+          {artist.socials?.facebook && <a className="button" href={artist.socials.facebook} target="_blank" rel="noreferrer">Facebook</a>}
+          {artist.socials?.spotify_playlist && <a className="button" href={artist.socials.spotify_playlist} target="_blank" rel="noreferrer">Spotify</a>}
+        </div>
       </div>
     </div>
   );

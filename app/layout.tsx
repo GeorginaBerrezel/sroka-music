@@ -13,6 +13,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <header>
           <nav className="container">
             <a href="#accueil" className="button">Accueil</a>
+            <a href="#musique" className="button">Musique</a>
             <a href="#videos" className="button">Vidéos</a>
             <a href="#concerts" className="button">Concerts</a>
             <a href="#news" className="button">News</a>
