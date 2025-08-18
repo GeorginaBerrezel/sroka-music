@@ -27,7 +27,6 @@ export default function Page() {
         <EventList />
       </section>
 
-       {/* 👇 Nouvelle section */}
       <section id="musique" className="container section">
         <h2 className="h2">Musique</h2>
         <Discography />
