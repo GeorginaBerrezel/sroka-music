@@ -1,13 +1,14 @@
-/* types/event.ts */
 export type EventItem = {
   title: string;
   slug: string;
-  eventDate: string; // ISO date
+  eventDate: string; // ISO
   venue?: string;
   city?: string;
   country?: string;
   ticketUrl?: string;
   price?: number;
-  image?: string; // URL
-  description?: string; // plain text or HTML snippet
+  image?: string;
+  description?: string;
 };
+
+export type EventView = EventItem & { dateText: string };

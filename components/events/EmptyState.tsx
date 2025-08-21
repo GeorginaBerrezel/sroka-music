@@ -1,4 +1,3 @@
-/* components/events/EmptyState.tsx */
 export default function EmptyState() {
   return (
     <div className="text-center py-16 opacity-80">
