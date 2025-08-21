@@ -1,0 +1,62 @@
+{
+  "name": "event",
+  "kind": "data",
+  "public": true,
+  "schema": {
+    "fields": [
+      {
+        "name": "title",
+        "type": "text",
+        "required": true
+      },
+      {
+        "name": "slug",
+        "type": "text",
+        "required": true,
+        "unique": true,
+        "helperText": "URL slug (e.g. paris-2025)"
+      },
+      {
+        "name": "eventDate",
+        "type": "date",
+        "required": true
+      },
+      {
+        "name": "venue",
+        "type": "text"
+      },
+      {
+        "name": "city",
+        "type": "text"
+      },
+      {
+        "name": "country",
+        "type": "text"
+      },
+      {
+        "name": "ticketUrl",
+        "type": "url"
+      },
+      {
+        "name": "price",
+        "type": "number"
+      },
+      {
+        "name": "image",
+        "type": "file",
+        "allowedFileTypes": [
+          "jpeg",
+          "png",
+          "webp",
+          "gif"
+        ]
+      },
+      {
+        "name": "description",
+        "type": "longText",
+        "helperText": "HTML allowed"
+      }
+    ],
+    "titleField": "title"
+  }
+}
