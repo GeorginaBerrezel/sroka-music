@@ -1,52 +1,20 @@
 [
   {
+    "title": "Foudre 147",
+    "year": 2025,
+    "cover": "/covers/foudre147.png",
+    "links": { "all": "https://fanlink.tv/sroka-foudre-147" }
+  },
+  {
     "title": "Rivages",
     "year": 2024,
     "cover": "/covers/rivages.png",
-    "description": "Album aux textures organiques et électroniques, jazz moderne et contemplatif.",
-    "credits": [
-      "Composition, basse, machines : Sroka",
-      "Batterie : Émile Guillaume"
-    ],
-    "links": {
-      "spotify": "https://open.spotify.com/intl-fr/album/5LTbTwTErDPCyERGaNqPQJ",
-      "youtube": "https://youtu.be/oWSQA9JlApM"
-    },
-    "videos": [
-      { "title": "Rivages (clip)", "platform": "youtube", "url": "https://youtu.be/oWSQA9JlApM" }
-    ]
+    "links": { "all": "https://fanlink.tv/sroka-rivages" }
   },
   {
     "title": "Dialogues",
-    "year": 2021,
+    "year": 2022,
     "cover": "/covers/dialogues.jpg",
-    "description": "EP de duos live avec Waagal, So Lune et Jason Mist.",
-    "credits": [
-      "Direction artistique : Sroka",
-      "Invités : Waagal, So Lune, Jason Mist"
-    ],
-    "links": {
-      "spotify": "https://open.spotify.com/intl-fr/album/3fb7DSipQp68UUjQwM2x6A",
-      "youtube": "https://youtu.be/oAKLHWRVVmg"
-    },
-    "videos": [
-      { "title": "Dialogues – extrait", "platform": "youtube", "url": "https://youtu.be/oAKLHWRVVmg" }
-    ]
-  },
-  {
-    "title": "Foudre 147 (série de singles)",
-    "year": 2025,
-    "cover": "/covers/foudre147.png",
-    "description": "Cinq titres explorant matières électroniques et basses profondes.",
-    "credits": [
-      "Composition & prod : Sroka"
-    ],
-    "links": {
-      "spotify": "https://open.spotify.com/playlist/20TDJDv4pOquSoWjThqyxe",
-      "youtube": "https://www.youtube.com/watch?v=NowdKhY5WHE"
-    },
-    "videos": [
-      { "title": "Foudre 147 (clip)", "platform": "youtube", "url": "https://www.youtube.com/watch?v=NowdKhY5WHE" }
-    ]
+    "links": { "all": "https://fanlink.tv/sroka-dialogues" }
   }
 ]

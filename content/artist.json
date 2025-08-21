@@ -1,22 +1,25 @@
 {
   "name": "Sroka",
   "tagline": "Electro-jazz atmosphérique & cinématique",
-  "shortBio": "Bassiste, compositeur et musicien originaire de Nouvelle-Calédonie, Sroka développe un projet à la croisée du jazz et de l’électro, teinté d’influences océaniennes.",
-  "longBio": "Sroka déploie un univers à la fois atmosphérique et cinématique : textures organiques en dialogue avec matières électroniques, jazz moderne et épuré. Sur scène, il est aux machines et à la basse, accompagné par Émile Guillaume à la batterie.",
+  "shortBio": "Bassiste, compositeur et musicien originaire de Nouvelle-Calédonie.",
+  "longBio": "Originaire de Nouvelle-Calédonie, Martin Sroczynski, alias Sroka, est bassiste, compositeur et musicien. À la croisée du jazz, de l’électro et des influences océaniennes, il construit un univers sonore riche et évocateur, à la fois atmosphérique et cinématographique. Tel un explorateur sonore, il trace les contours d’une musique instrumentale nourrie de contrastes, où les textures organiques dialoguent avec les matières électroniques.\n\nAprès un premier EP en duo, Dialogues (2022), il compose et autoproduit Rivages (2024), un second opus plus ambitieux, salué par la presse spécialisée, nommé album jazz de la semaine dans le Club Jazz à FIP, et présenté sur des scènes et showcases professionnels (Paris Jazz sur Seine, Jammin’Juan).\n\nEn 2025, Sroka lance Foudre 147, une série de cinq singles publiés successivement. Ce cycle prolonge son exploration des textures sonores, en particulier électroniques, chaque pièce se présentant comme une escale : résonances profondes de la basse, silences habités, boucles hypnotiques et échos des racines. Une musique à la fois introspective et ouverte, qui invite à l’imaginaire.\n\nSur scène, Sroka est aux machines et à la basse, accompagné par Émile Guillaume à la batterie. Ensemble, ils livrent un set vibrant et envoûtant, où l’on pense à Bonobo, Kiasmos ou encore Portico Quartet, pour cette capacité à faire coexister émotion acoustique et pulsation électronique. Le projet existe également en quartet, avec Antton Armanttier aux claviers et Paolo Chatet à la trompette, enrichissant le live d’une dimension organique et improvisée.",
   "pressQuotes": [
-    "« Sroka rend hommage à son archipel natal grâce à des sonorités jazz d’une douceur infinie. »",
-    "« Rivages, la musique contemplative et envoûtante de Sroka. »",
-    "Album jazz de la semaine dans le Club Jazzafip."
+    "Élu album jazz de la semaine dans le club Jazzafip « Le bassiste bordelais originaire de Nouvelle-Calédonie voyage entre new jazz teinté de world music et de musique électronique. » — FIP",
+    "« Sroka rend hommage à son archipel natal, grâce a des sonorités jazz d’une douceur infinie. » — Outremer.lemag",
+    "« Rivages, la musique contemplative et envoûtante de Sroka. » — Radio France"
   ],
   "contacts": {
-    "programming_email": "srokamusic@gmail.com",
-    "programming_contact": "Martin Sroczynski - 06 95 51 52 23",
-    "tech_contact": "Alexis Claverie - 06 05 34 16 17"
-  },
-  "socials": {
-    "instagram": "https://www.instagram.com/sroka.music/",
-    "facebook": "https://www.facebook.com/SrokaOfficial",
-    "youtube": "https://www.youtube.com/@Srokamusic/featured",
-    "spotify_playlist": "https://open.spotify.com/playlist/20TDJDv4pOquSoWjThqyxe?si=77b76291de8b416c"
+    "artist": "Martin Sroczynski - Sroka",
+    "artist_email": "srokamusic@gmail.com",
+    "artist_phone": "+33 6 95 51 52 23",
+    "booking_agency": "Agence Echo Noir – Inès Ghedbane",
+    "booking_email": "agence.echonoir@gmail.com",
+    "booking_phone": "+33 6 64 16 32 01",
+    "tech_name": "Alexis Claverie",
+    "tech_email": "alexclaverie8@gmail.com",
+    "tech_phone": "+33 6 05 34 16 17",
+    "press_agency": "Maison CdZ – Camille Dal’Zovo",
+    "press_email": "camille@cdzmusic.com",
+    "press_phone": "+33 7 49 39 00 36"
   }
 }

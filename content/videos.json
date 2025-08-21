@@ -1,22 +1,11 @@
 [
-  {
-    "title": "Foudre 147 (clip)",
-    "platform": "youtube",
-    "url": "https://www.youtube.com/watch?v=NowdKhY5WHE"
-  },
-  {
-    "title": "Rivages",
-    "platform": "youtube",
-    "url": "https://youtu.be/oWSQA9JlApM"
-  },
-  {
-    "title": "Live – Le Duc des Lombards",
-    "platform": "youtube",
-    "url": "https://www.youtube.com/watch?v=4eEi6J9g8d0"
-  },
-  {
-    "title": "Dialogues (EP) – extrait",
-    "platform": "youtube",
-    "url": "https://youtu.be/oAKLHWRVVmg"
-  }
+  { "title": "Foudre 147 (clip)", "platform": "youtube", "url": "https://youtube.com/watch?v=NowdKhY5WHE" },
+  { "title": "Rivages", "platform": "youtube", "url": "https://www.youtube.com/watch?v=oWSQA9JlApM" },
+  { "title": "Live – Le Duc des Lombards", "platform": "youtube", "url": "https://www.youtube.com/watch?v=4eEi6J9g8d0" },
+  { "title": "Extrait", "platform": "youtube", "url": "https://www.youtube.com/watch?v=PLIcE4RiIX4" },
+  { "title": "Session", "platform": "youtube", "url": "https://www.youtube.com/watch?v=Q5y2TdL_VE0" },
+  { "title": "Live", "platform": "youtube", "url": "https://www.youtube.com/watch?v=tATmsdZPlOI" },
+  { "title": "Dialogues – extrait", "platform": "youtube", "url": "https://www.youtube.com/watch?v=oAKLHWRVVmg" },
+  { "title": "Autre 1", "platform": "youtube", "url": "https://www.youtube.com/watch?v=-1WvBxuHK9E" },
+  { "title": "CJPJ6s", "platform": "youtube", "url": "https://www.youtube.com/watch?v=cjpJ6sJMj88" }
 ]

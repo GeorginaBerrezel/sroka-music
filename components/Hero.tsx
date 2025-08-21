@@ -1,48 +1,85 @@
-// app/components/Hero.tsx
 'use client';
-
 import Image from 'next/image';
-import { useEffect, useRef } from 'react';
-import { gsap } from 'gsap';
-import artist from '../content/artist.json';
 
 export default function Hero() {
-  const ref = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!ref.current) return;
-    const ctx = gsap.context(() => {
-      gsap.fromTo('.hero-logo', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, ease: 'power3.out' });
-      gsap.fromTo('.hero-title', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, delay: 0.1, ease: 'power3.out' });
-      gsap.fromTo('.hero-tag', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, delay: 0.2, ease: 'power3.out' });
-      gsap.fromTo('.hero-badges', { y: 20, opacity: 0 }, { y: 0, opacity: 1, duration: 0.9, delay: 0.3, ease: 'power3.out' });
-    }, ref);
-    return () => ctx.revert();
-  }, []);
+  const bg = process.env.NEXT_PUBLIC_HERO_BG || '';
 
   return (
-    <div ref={ref} className="card">
-      <div style={{ display: 'grid', gap: 16 }}>
-        <div className="hero-logo" style={{ display: 'flex', alignItems: 'center', gap: 12 }}>
-          <Image src="/sroka_logo_blanc.png" alt="Sroka" width={72} height={72} priority />
-          <div>
-            <h1 className="h1 hero-title">{artist.name}</h1>
-            <p className="muted hero-tag">{artist.tagline}</p>
+    <div
+      className="relative grid"
+      style={{
+        minHeight: '100svh',
+        height: '100dvh',
+        ...(bg
+          ? {
+              backgroundImage: `url(${bg})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }
+          : {}),
+        // Place le contenu SOUS le header et plutôt en haut
+        alignItems: 'start',
+        justifyItems: 'center',
+        paddingTop: 'calc(var(--header-h, 72px) + 16px)',
+        paddingLeft: 24,
+        paddingRight: 24,
+      }}
+    >
+      {/* Overlay pour lisibilité */}
+      <div className="absolute inset-0 bg-black/35" aria-hidden="true" />
+
+      {/* Colonne centrée */}
+      <div
+        className="relative z-10 w-full"
+        style={{
+          display: 'grid',
+          justifyItems: 'center',
+          rowGap: '1.25rem',
+          textAlign: 'center',
+          width: 'min(96vw, 1200px)', // largeur globale des contenus
+          margin: '0 auto',
+        }}
+      >
+        {/* LOGO — plus d'absolu : pas de fill, width/height + h-auto */}
+        <Image
+          src="/sroka_logo_noir.png" // ou _blanc si besoin
+          alt="Sroka"
+          width={380}
+          height={140}
+          priority
+          className="w-[260px] md:w-[380px] h-auto mx-auto"
+        />
+
+        {/* PHRASE */}
+        <p className="text-white text-2xl md:text-3xl font-light">
+          Mon dernier EP <em>Foudre 147</em> est disponible sur toutes les plateformes&nbsp;!
+        </p>
+
+        {/* BOUTON */}
+        <a
+          className="inline-block px-6 py-4 rounded-xl bg-white text-black text-lg font-semibold hover:opacity-90 transition"
+          href="https://fanlink.tv/sroka-foudre-147"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Écouter l’EP
+        </a>
+
+        {/* VIDÉO — taille pilotée par le conteneur, pas par l'iframe */}
+        <div
+          className="rounded-xl overflow-hidden shadow-lg"
+          style={{ width: 'min(96vw, 1200px)' }}  // ← agrandis ici
+        >
+          <div className="relative aspect-video">
+            <iframe
+              className="absolute inset-0 w-full h-full"
+              src="https://www.youtube.com/embed/NowdKhY5WHE"
+              title="Dernier clip"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              loading="lazy"
+              allowFullScreen
+            />
           </div>
-        </div>
-
-        <div className="flex hero-badges">
-          <span className="badge">Electro-jazz</span>
-          <span className="badge">Ciné/Atmos</span>
-          <span className="badge">Live Duo/4Tet</span>
-        </div>
-
-        {/* Réseaux */}
-        <div className="flex">
-          {artist.socials?.instagram && <a className="button" href={artist.socials.instagram} target="_blank" rel="noreferrer">Instagram</a>}
-          {artist.socials?.youtube && <a className="button" href={artist.socials.youtube} target="_blank" rel="noreferrer">YouTube</a>}
-          {artist.socials?.facebook && <a className="button" href={artist.socials.facebook} target="_blank" rel="noreferrer">Facebook</a>}
-          {artist.socials?.spotify_playlist && <a className="button" href={artist.socials.spotify_playlist} target="_blank" rel="noreferrer">Spotify</a>}
         </div>
       </div>
     </div>
